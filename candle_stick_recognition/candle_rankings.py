@@ -1,3 +1,15 @@
+# Note - 1
+# Only some patterns have bull and bear versions. 
+# However, to make the process unified and for codability purposes 
+# all patterns are labeled with "_Bull" and "_Bear" tags.
+# Both versions of the single patterns are given same performance rank, 
+# since they will always return only 1 version.  
+
+# Note - 2 
+# Following TA-Lib patterns are excluded from the analysis since the corresponding ranking not found:
+# CounterAttack, Longline, Shortline, Stalledpattern, Kickingbylength
+
+
 candle_rankings = {
         "CDL3LINESTRIKE_Bull": 1,
         "CDL3LINESTRIKE_Bear": 2,

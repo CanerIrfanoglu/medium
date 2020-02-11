@@ -9,8 +9,7 @@ h = df['high'].astype(float)
 l = df['low'].astype(float)
 c = df['close'].astype(float)
 
-
-trace = go.Candlestick( #x= pd.to_datetime(dfohlc.index.values),
+trace = go.Candlestick(
             open=o,
             high=h,
             low=l,
@@ -18,3 +17,4 @@ trace = go.Candlestick( #x= pd.to_datetime(dfohlc.index.values),
 data = [trace]
 
 plot(data, filename='go_candle1.html')
+

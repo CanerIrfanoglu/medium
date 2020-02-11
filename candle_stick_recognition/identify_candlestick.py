@@ -70,7 +70,8 @@ def recognize_candlestick(df):
                 df.loc[index, 'candlestick_pattern'] = container[rank_index_best]
                 df.loc[index, 'candlestick_match_count'] = len(container)
     # clean up candle columns
-    df.drop(candle_names, axis = 1, inplace = True)
+    cols_to_drop = candle_names + list(exclude_items)
+    df.drop(cols_to_drop, axis = 1, inplace = True)
 
     return df
 

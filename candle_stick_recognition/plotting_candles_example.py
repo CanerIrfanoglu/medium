@@ -16,5 +16,14 @@ trace = go.Candlestick(
             close=c)
 data = [trace]
 
-plot(data, filename='go_candle1.html')
+#plot(data, filename='go_candle1.html')
 
+
+layout = {
+    'title': '2019 Feb - 2020 Feb Bitcoin Candlestick Chart',
+    'yaxis': {'title': 'Price'},
+    'xaxis': {'title': 'Index Number'},
+
+}
+fig = dict(data=data, layout=layout)
+plot(fig, filename='btc_candles')
